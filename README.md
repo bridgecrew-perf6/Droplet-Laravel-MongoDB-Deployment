@@ -50,7 +50,7 @@ php artisan migrate<br>
 <h3>Change document root</h3>
 nano /etc/apache2/sites-available/000-default.conf<br>
 
-"Changed DocumentRoot<br>
+Change DocumentRoot -> "DocumentRoot = <location of public folder in project>"<br>
 <Directory "path/to/laravel/project/public"><br>
     Allowoverride All<br>
 \</Directory><br>
