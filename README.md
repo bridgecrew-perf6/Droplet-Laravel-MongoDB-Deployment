@@ -51,9 +51,9 @@ php artisan migrate<br>
 nano /etc/apache2/sites-available/000-default.conf<br>
 
 "Changed DocumentRoot<br>
-"<Directory "path/to/laravel/project/public"><br>
+<Directory "path/to/laravel/project/public"><br>
     Allowoverride All<br>
-</Directory>"<br>
+\</Directory><br>
 
 sudo a2enmod rewrite	In project directory<br>
 
