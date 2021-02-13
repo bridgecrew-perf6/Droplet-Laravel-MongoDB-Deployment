@@ -3,7 +3,7 @@
 Go to marketplace when setting up your droplet and select the Laravel image
 <h2>Commands I used</h2>
 <h3>Connect</h3>
-ssh root@<ip_of_droplet> <br>
+ssh root@'<ip_of_droplet>' <br>
 
 <h3>Unistall Nginx</h3>
 sudo apt-get purge nginx nginx-common   <br>
