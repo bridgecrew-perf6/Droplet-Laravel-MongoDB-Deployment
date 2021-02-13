@@ -29,6 +29,7 @@ sudo pecl install mongodb<br>
 echo "extension=mongodb.so" >> /etc/php/7.4/cli/php.ini <br>
 
 <h3>Upload project</h3>
+cd to/path/of/document/root
 git clone https://github.com/<project><br>
 
 <h3>Install packages</h3>
