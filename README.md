@@ -11,10 +11,10 @@ sudo apt-get update   <br>
 
 <h3>Install apache2</h3>
 sudo apt-get install apache2<br>
-
-<h3>Install perl -> install mongodb later</h3>
 sudo apt-get install libapache2-mod-php7.4 <br>
 sudo service apache2 restart <br>
+
+<h3>Install perl -> install mongodb later</h3>
 sudo apt-get install php7.x-dev		Install pecl to install mongodb<br>
 
 <h3>Install npm</h3>
