@@ -18,7 +18,6 @@ sudo service apache2 restart <br>
 sudo apt-get install php7.x-dev		Install pecl to install mongodb<br>
 
 <h3>Install npm</h3>
-sudo apt update<br>
 sudo apt install nodejs<br>
 sudo apt install npm<br>
 
@@ -41,22 +40,18 @@ cp .env.example .env<br>
 nano .env<br>
 php artisan key:generate<br>
 
-<h3>Set permissions</h3>
-sudo chmod 0777 -R <project><br>
-sudo chmod 0777 -R storage<br>
-
 <h3>Migrate database</h3>
 php artisan migrate<br>
 
 <h3>Change document root</h3>
 nano /etc/apache2/sites-available/000-default.conf<br>
 
-Change DocumentRoot -> "DocumentRoot = <location of public folder in project>"<br>
+Change DocumentRoot -> "DocumentRoot = location of public folder in project"<br>
+
+Don't forget this
 <Directory "path/to/laravel/project/public"><br>
     Allowoverride All<br>
 \</Directory><br>
-
-sudo a2enmod rewrite	In project directory<br>
 
 sudo service apache2 restart <br>
 
